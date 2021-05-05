@@ -1,0 +1,24 @@
+@import url('./layout/base.css');
+@import url('./layout/normalize.css');
+
+@import "media/adaptive";
+
+
+@import url('./blocs/header.css');
+@import url('./blocs/logo.css');
+@import url('./blocs/menu.css');
+@import url('./blocs/contacts.css');
+@import url('./blocs/maincontent.css');
+@import url('./blocs/hello.css');
+@import url('./blocs/button.css');
+@import url('./blocs/info.css');
+@import url('./blocs/map.css');
+@import url('./blocs/why.css');
+@import url('./blocs/advantage.css');
+@import url('./blocs/advantages.css');
+@import url('./blocs/reviews.css');
+@import url('./blocs/basket.css');
+@import url('./blocs/radio.css');
+@import url('./blocs/order.css');
+
+$z-fixed-menu:100;

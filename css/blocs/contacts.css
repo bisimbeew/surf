@@ -1,0 +1,16 @@
+.contacts {
+  margin-top: -6px;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+.contacts__phone::before {
+  content: url("../../img/contacts__phone-before.png");
+  height: 29px;
+  right: 140px;
+  top: 29px;
+  position: absolute;
+}

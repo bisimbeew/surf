@@ -1,0 +1,36 @@
+
+
+.why {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.whyline {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.why_title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: black;
+  margin-bottom: 65px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.why_subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #666666;
+  padding: 0 5%;
+}
+
+.headline_title{
+  margin-bottom: 17px;
+}
+
