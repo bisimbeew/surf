@@ -1,26 +1,26 @@
 .info_list {
-  width: 526px;
-  height: 41px;
-  margin-top: -16px;
-  margin-left: 4px;
+  width: 32.875rem;
+  height: 2.5625rem;
+  margin-top: -1rem;
+  margin-left: 0.25rem;
 }
 .info_list .info-content {
   display: flex;
   justify-content: space-between;
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 .info_list .info-content .info_item {
-  width: 142px;
-  height: 41px;
+  width: 8.875rem;
+  height: 2.5625rem;
   display: flex;
   align-items: center;
 }
 .info_list .info-content .info_item .info-pik {
   margin-right: 0;
   float: left;
-  margin-right: 14px;
+  margin-right: 0.875rem;
 }
 .info_list .info-content .info_item .info-text {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
 }

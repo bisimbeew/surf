@@ -2,7 +2,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 2.5rem;
   -webkit-user-select: none;
           user-select: none;
 }
@@ -21,17 +21,17 @@
 }
 
 .radio_visible {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   border-radius: 50%;
   background: #fff;
   position: relative;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .radio_visible:before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
   border-radius: 50%;
   background: #FEDB3F;
   position: absolute;

@@ -13,8 +13,8 @@
 }
 
 .advantage_icon {
-  width: 68px;
-  height: 68px;
+  width: 4.25rem;
+  height: 4.25rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,10 +26,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 43px;
-  height: 68px;
+  width: 2.6875rem;
+  height: 4.25rem;
 }
 
 .headline_subtitle {
-  margin-bottom: 65px;
+  margin-bottom: 4.0625rem;
 }

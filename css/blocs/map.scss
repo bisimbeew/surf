@@ -5,7 +5,7 @@
 }
 
 .map-fixed_item{
-  margin-bottom: 2px;
+  margin-bottom: 0.125rem;
 
   &-active {
     .map-fixed_link{
@@ -15,18 +15,18 @@
 }
 
 .map-fixed_link{
-  width: 18px;
-  height: 19px;
+  width: 1.125rem;
+  height: 1.1875rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   display: block;
   position: relative;
 
   &:before{
     content: "";
     display: block;
-    width: 6px;
-    height: 6px;
+    width: 0.375rem;
+    height: 0.375rem;
     border-radius: 50%;
     background: #fff;
     position: absolute;
