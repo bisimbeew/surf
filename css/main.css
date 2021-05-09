@@ -140,7 +140,7 @@ footer {
   height: 100%;
 }
 .title-page-header_line {
-  background: url(../../img/header_line.png) center top;
+  background: url(../img/header_line.png) center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -219,7 +219,7 @@ footer {
   white-space: nowrap;
 }
 .contacts__phone::before {
-  content: url("../../img/contacts__phone-before.png");
+  content: url("../img/contacts__phone-before.png");
   height: 1.8125rem;
   right: 8.75rem;
   top: 1.8125rem;
@@ -579,7 +579,7 @@ footer {
 }
 
 .basket {
-  background-image: url(../../img/cta.jpg);
+  background-image: url(../img/cta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2b2b2b;
