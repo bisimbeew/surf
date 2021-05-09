@@ -1,6 +1,6 @@
 .hello_title {
   width: 17rem;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: bold;
   line-height: 3.625rem;
   margin-bottom: 1.1875rem;
@@ -15,11 +15,12 @@
     display: flex;
     text-align: center;
     align-items: flex-end;
+    padding: 0 15%;
   }
 }
 
 .hello__desc {
-  font-size: 1.3125rem;
-  line-height: 1.5625rem;
-  margin-bottom: 2.4375rem;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 39px;
 }

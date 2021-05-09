@@ -15,8 +15,9 @@
  }
 
 .title-page-header_line {
-  background: url("../../img/header_line.png") no-repeat center top;
+  background: url(../../img/header_line.png) center top;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -32,6 +33,10 @@
     padding-right: 1.3125rem;
     padding-left: 0.9375rem;
     padding-top: 2.3125rem;
+  }
+
+  @include phones {
+    height: 7.1rem;
   }
 }
 
