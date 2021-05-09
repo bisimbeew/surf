@@ -1,7 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
 html {
   font-size: 16px;
 }
@@ -219,7 +217,7 @@ footer {
   white-space: nowrap;
 }
 .contacts__phone::before {
-  content: url("../img/contacts__phone-before.png");
+  content: url(../img/contacts__phone-before.png);
   height: 1.8125rem;
   right: 8.75rem;
   top: 1.8125rem;
@@ -449,7 +447,7 @@ footer {
   padding-right: 0;
 }
 .advantages_item::before {
-  content: url(../../img/icon-i.png);
+  content: url(../img/icon-i.png);
   position: absolute;
   top: 21%;
   left: -23%;
