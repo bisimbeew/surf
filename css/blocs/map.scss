@@ -2,6 +2,10 @@
   position: fixed;
   top: 35%;
   right: 23.5%;
+
+  @include tablets{
+    display: none;
+  }
 }
 
 .map-fixed_item{

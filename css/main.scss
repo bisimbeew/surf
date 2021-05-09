@@ -1,0 +1,31 @@
+$containerWidth :940px;
+$baseFontSize:16px;
+
+$tablets:768px;
+$phones:480px;
+
+@import "./media.scss";
+
+//normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&display=swap');
+@import "./base.scss";
+
+@import "./blocs/header.scss";
+@import "./blocs/logo.scss";
+@import "./blocs/menu.scss";
+@import "./blocs/contacts.scss";
+@import "./blocs/hello.scss";
+@import "./blocs/button.scss";
+@import "./blocs/info.scss";
+@import "./blocs/map.scss";
+@import "./blocs/why.scss";
+@import "./blocs/advantage.scss";
+@import "./blocs/advantages.scss";
+@import "./blocs/reviews.scss";
+@import "./blocs/basket.scss";
+@import "./blocs/radio.scss";
+@import "./blocs/order.scss";
+@import "./blocs/hamburger.scss";

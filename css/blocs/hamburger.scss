@@ -1,0 +1,21 @@
+.hamburger{
+  width: 26px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  display: none;
+  margin-top: 11px;
+  margin-right: 13px;
+
+  @include tablets {
+    display: inline-flex;
+  }
+}
+
+.hamburger_plank{
+  display: block;
+  background: #fff;
+  height: 4px;
+  border-radius:  10px; ;
+}

@@ -1,10 +1,21 @@
 .hello_title {
+  width: 17rem;
   font-size: 3rem;
   font-weight: bold;
   line-height: 3.625rem;
   margin-bottom: 1.1875rem;
   text-transform: uppercase;
   font-style: normal;
+
+  @include tablets{
+    width: 41rem;
+  }
+
+  @include phones {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+  }
 }
 
 .hello__desc {

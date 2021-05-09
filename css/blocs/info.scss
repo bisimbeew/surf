@@ -29,3 +29,10 @@
     }
   }
 }
+
+.info_list{
+
+  @include tablets{
+    display: none;
+  }
+}
