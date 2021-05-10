@@ -1,5 +1,9 @@
 .advantage {
   text-align: center;
+
+  @include phones {
+    display: flex;
+  }
 }
 
 .advantages_image-wrapper{

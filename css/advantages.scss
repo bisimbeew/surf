@@ -1,6 +1,10 @@
 .advantages {
   display: flex;
   column-count: 3;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .advantages_item {
@@ -10,6 +14,10 @@
   flex: 1;
   padding: 0 3%;
   position: relative;
+
+  @include phones {
+    padding: 0;
+  }
 
   &:first-child {
     padding-left: 0;
@@ -30,6 +38,10 @@
     height: 1.5rem;
     right: 0;
     transform: translateX(50%);
+
+    @include phones {
+      display: none;
+    }
   }
 }
 

@@ -9,15 +9,14 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  @include tablets{
-    
-  }
  }
 
 .title-page-header_line {
   background: url(../img/header_line.png) center top;
   background-size: cover;
   background-repeat: no-repeat;
+
+  
 }
 
 

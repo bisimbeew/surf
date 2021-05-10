@@ -20,6 +20,7 @@ body {
 }
 
 body {
+  font-size: 16px;
   font-family: "Alegreya Sans", sans-serif;
   color: #FFF;
   line-height: 1.42;
@@ -78,6 +79,7 @@ table {
 
 p {
   margin: 0;
+  padding: 0;
 }
 
 * {
@@ -137,6 +139,7 @@ footer {
   flex-direction: column;
   height: 100%;
 }
+
 .title-page-header_line {
   background: url(../img/header_line.png) center top;
   background-size: cover;
@@ -256,7 +259,7 @@ footer {
 
 .hello__desc {
   font-size: 21px;
-  line-height: 25px;
+  font-weight: normal;
   margin-bottom: 39px;
 }
 
@@ -391,6 +394,11 @@ footer {
 .advantage {
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .advantage {
+    display: flex;
+  }
+}
 
 .advantages_image-wrapper {
   display: inline-block;
@@ -428,6 +436,11 @@ footer {
   display: flex;
   column-count: 3;
 }
+@media screen and (max-width: 480px) {
+  .advantages {
+    flex-direction: column;
+  }
+}
 
 .advantages_item {
   display: flex;
@@ -436,6 +449,11 @@ footer {
   flex: 1;
   padding: 0 3%;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .advantages_item {
+    padding: 0;
+  }
 }
 .advantages_item:first-child {
   padding-left: 0;
@@ -455,6 +473,11 @@ footer {
   height: 1.5rem;
   right: 0;
   transform: translateX(50%);
+}
+@media screen and (max-width: 480px) {
+  .advantages_item::before {
+    display: none;
+  }
 }
 
 .advantages_title {
@@ -747,11 +770,22 @@ footer {
 }
 
 .order {
-  position: relative;
-  width: 36.4375rem;
+  width: 41%;
   margin-bottom: 5.125rem;
 }
 @media screen and (max-width: 768px) {
+  .order {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
   .order {
     width: 100%;
     flex: 1;
@@ -785,4 +819,12 @@ footer {
   background: #fff;
   height: 4px;
   border-radius: 10px;
+}
+
+.map {
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2b2b2b;
+  color: #fff;
 }
