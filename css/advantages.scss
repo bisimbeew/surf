@@ -1,6 +1,5 @@
 .advantages {
   display: flex;
-  column-count: 3;
 
   @include phones {
     flex-direction: column;
