@@ -11,3 +11,9 @@
     @content;
   }
 }
+
+@mixin mphones  {
+  @media screen and (max-width: $mphones) {
+    @content;
+  }
+}

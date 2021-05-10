@@ -109,6 +109,10 @@ footer {
   @include tablets{
     min-height: 108vh;
   }
+
+  @include phones {
+    min-height: 120vh;
+  }
 }
 
 .title{

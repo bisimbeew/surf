@@ -114,6 +114,11 @@ footer {
     min-height: 108vh;
   }
 }
+@media screen and (max-width: 480px) {
+  .section {
+    min-height: 120vh;
+  }
+}
 
 .title {
   font-weight: bold;
@@ -255,6 +260,11 @@ footer {
     align-items: flex-end;
     padding: 0 15%;
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hello_title {
+    font-size: 35px;
   }
 }
 

@@ -18,6 +18,10 @@
     padding: 0 15%;
     font-size: 40px;
   }
+
+  @include mphones {
+    font-size: 35px;
+  }
 }
 
 .hello__desc {
