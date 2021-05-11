@@ -5,6 +5,10 @@
   margin-right: 2.5rem;
   user-select: none;
 
+  @include mphones {
+    margin-right: 0.625rem;
+  }
+
   &--checkbox{
     .radio_visible{
       border-radius: 0;

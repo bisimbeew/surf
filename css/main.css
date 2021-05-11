@@ -812,6 +812,11 @@ footer {
   -webkit-user-select: none;
           user-select: none;
 }
+@media screen and (max-width: 426px) {
+  .radio {
+    margin-right: 0.625rem;
+  }
+}
 .radio--checkbox .radio_visible {
   border-radius: 0;
 }
@@ -905,4 +910,57 @@ footer {
   background-size: cover;
   background-color: #2b2b2b;
   color: #fff;
+}
+
+.footer {
+  height: 165px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  top: 49px;
+  margin-left: 172px;
+}
+
+.socials__item {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: flex;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+}
+
+.socials__item--icon--tg .socials__link {
+  width: 36px;
+  height: 36px;
+  background: url("../../img/css_sprites.png") -10px -10px;
+}
+
+.socials__item--icon--vk .socials__link {
+  width: 36px;
+  height: 36px;
+  background: url(../../img/css_sprites.png) -66px -10px;
+}
+
+.socials__item--icon--fb .socials__link {
+  width: 36px;
+  height: 36px;
+  background: url(../../img/css_sprites.png) -122px -10px;
+}
+
+.socials__item--icon--instagram .socials__link {
+  width: 36px;
+  height: 36px;
+  background: url(../../img/css_sprites.png) -178px -10px;
 }
