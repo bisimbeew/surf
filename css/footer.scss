@@ -12,6 +12,7 @@
 
   @include phones{
     max-width: 25rem;
+    flex-direction: column;
   }
 }
 
@@ -23,6 +24,11 @@
 .footer_contacts{
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
+  @include phones {
+    margin-bottom: 10px;
+    align-items: center;
+  }
 }
 
 .footer_phone {

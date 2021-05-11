@@ -264,7 +264,7 @@ footer {
   flex-shrink: 0;
 }
 
-.contacts__place {
+.contacts_place {
   font-size: 21px;
   font-weight: 400;
 }
@@ -991,6 +991,7 @@ footer {
 @media screen and (max-width: 480px) {
   .footer_container {
     max-width: 25rem;
+    flex-direction: column;
   }
 }
 
@@ -1002,6 +1003,13 @@ footer {
 .footer_contacts {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
+}
+@media screen and (max-width: 480px) {
+  .footer_contacts {
+    margin-bottom: 10px;
+    align-items: center;
+  }
 }
 
 .footer_phone {
