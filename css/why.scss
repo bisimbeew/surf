@@ -32,5 +32,13 @@
 
 .headline_title{
   margin-bottom: 1.0625rem;
+
+  @include phones {
+    font-size: 40px;
+  }
+
+  @include mphones {
+    font-size: 35px;
+  }
 }
 

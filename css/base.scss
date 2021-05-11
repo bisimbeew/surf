@@ -69,6 +69,18 @@ h1 h2 h3 h4 h5 h6 {
   font-weight: normal;
 }
 
+h1,
+h2
+{
+  @include phones {
+    font-size: 40px;
+  }
+
+  @include mphones{
+    font-size: 35px;
+  }
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -125,4 +137,8 @@ footer {
   margin-right: auto;
   text-align: center;
   max-width: 37.5rem;
+
+  @include phones {
+    font-size: 40px;
+  }
 }
