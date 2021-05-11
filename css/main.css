@@ -696,6 +696,11 @@ footer {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
+}
 
 .form_col {
   flex: 1;
@@ -775,6 +780,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 480px) {
+  .controls {
+    justify-content: center;
+  }
 }
 .controls:before {
   display: none;

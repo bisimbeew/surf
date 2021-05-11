@@ -25,6 +25,9 @@
     padding: 0 17%;
     flex-direction: column;
    }
+   @include phones {
+    padding: 0;
+   }
 }
 
 .form_col{
@@ -104,6 +107,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.25rem; 
+
+  @include phones{
+    justify-content: center;
+  }
 
   &:before{
     display: none;
