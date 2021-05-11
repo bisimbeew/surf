@@ -780,7 +780,7 @@ footer {
   border-radius: 0;
 }
 .radio--checkbox .radio_visible:before {
-  background: url(../../img/pik.png) center center no-repeat;
+  background: url(../img/pik.png) center center no-repeat;
 }
 
 .radio_controls {
