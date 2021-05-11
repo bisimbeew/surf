@@ -1,9 +1,17 @@
 .advantage {
   text-align: center;
-
+  
   @include mphones {
     display: flex;
+    text-align: left;
   }
+
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
+  
 }
 
 .advantages_image-wrapper{
@@ -36,4 +44,11 @@
 
 .headline_subtitle{
   margin-bottom: 4.0625rem;
+  @include phones {
+    padding: 0 12%;
+  }
+
+  @include mphones {
+    padding: 0 2%;
+  }
 }

@@ -62,3 +62,11 @@ color: #292929;
 .advantages_image_one{
   top: 0;
 }
+
+.advantages_image-wrapper {
+  
+  @include mphones{
+    display: flex;
+    align-items: center;
+  }
+}

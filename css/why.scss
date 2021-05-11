@@ -27,7 +27,7 @@
   line-height: 1.375rem;
   text-align: center;
   color: #666666;
-  padding: 0 5%;
+  padding: 0 27%;
 }
 
 .headline_title{
@@ -35,10 +35,12 @@
 
   @include phones {
     font-size: 40px;
+    padding: 0 12%;
   }
 
   @include mphones {
     font-size: 35px;
+    padding: 0 2%;
   }
 }
 
