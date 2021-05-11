@@ -434,7 +434,7 @@ footer {
 .advantage {
   text-align: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 426px) {
   .advantage {
     display: flex;
   }
@@ -480,6 +480,11 @@ footer {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 426px) {
+  .advantages {
+    flex-direction: column;
+  }
+}
 
 .advantages_item {
   align-items: center;
@@ -511,7 +516,7 @@ footer {
   right: 0;
   transform: translateX(50%);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 426px) {
   .advantages_item::before {
     display: none;
   }

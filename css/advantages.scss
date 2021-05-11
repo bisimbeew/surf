@@ -1,7 +1,10 @@
 .advantages {
   display: flex;
 
-  @include phones {
+  @include phones  {
+    flex-direction: column;
+  }
+  @include mphones  {
     flex-direction: column;
   }
 }
@@ -37,7 +40,7 @@
     right: 0;
     transform: translateX(50%);
 
-    @include phones {
+    @include mphones {
       display: none;
     }
   }

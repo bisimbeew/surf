@@ -1,7 +1,7 @@
 .advantage {
   text-align: center;
 
-  @include phones {
+  @include mphones {
     display: flex;
   }
 }
