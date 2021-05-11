@@ -6,11 +6,9 @@
   white-space: nowrap;
 
   
-&::before{
+&:before{
   content: url("../img/contacts__phone-before.png");
-  height: 1.8125rem;
-  right: 8.75rem;
-  top: 1.8125rem;
+  margin-left: -1.25rem;
   position: absolute;
   flex-shrink: 0;
 }
@@ -19,5 +17,18 @@
   @include tablets{
     display: none;
   }
+}
+.footer-contacts_phone{
+  &:before{
+    content: url("../img/phones.png");
+    margin-left: -1.25rem;
+    position: absolute;
+    flex-shrink: 0;
+  }
+}
+
+.contacts__place{
+  font-size: 21px;
+  font-weight: 400;
 }
 
