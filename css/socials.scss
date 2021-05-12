@@ -4,7 +4,9 @@
   width: 1.25rem;
   height: 1.25rem;
   margin-left: 1.125rem;
+  
   &:hover{
     fill: black;
+    transition: 1s;
   }
 }

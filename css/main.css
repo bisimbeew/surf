@@ -977,4 +977,5 @@ footer {
 }
 .socials_icon:hover {
   fill: black;
+  transition: 1s;
 }
