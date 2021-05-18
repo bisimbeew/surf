@@ -969,7 +969,7 @@ footer {
 }
 
 .socials_icon {
-  fill: blanchedalmond;
+  fill: #B3B3B3;
   cursor: pointer;
   width: 1.25rem;
   height: 1.25rem;
@@ -977,5 +977,5 @@ footer {
 }
 .socials_icon:hover {
   fill: black;
-  transition: 1s;
+  transition: 0.1s;
 }
