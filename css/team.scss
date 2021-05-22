@@ -1,8 +1,77 @@
-.team_container{
+.team-container{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
 }
 
-.team_list
+.team_list{
+	display: flex;
+	justify-content: space-between;
+	min-width: 100%;
+	@include tablets {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.team__item{
+	max-width: 13rem;
+	text-align: center;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.team__member{
+	@include tablets{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+.team__photo{
+	@include tablets{
+		display: none;
+	}
+}
+
+.team_name{
+	margin: 1.5rem 0;
+	font-weight: 700;
+	position: relative;
+
+	&::after{
+		content: url(../img/team-after.png);
+		position: absolute;
+		right: 1rem;
+		top: 0.1rem;
+	}
+	@include tablets{
+		display: flex;
+		margin: 5rem auto;
+		font-weight: 700;
+		position: relative;
+
+		&::after{
+			content: url(../img/team-after.png);
+			position: absolute;
+			right: -1rem;
+			top: -0.1rem;
+		}
+	}
+}
+
+.team__item-avtive{
+	position: relative;
+	@include tablets{
+		display: block;
+	}
+}
+
+.team__text-block{
+	height: 0;
+	overflow: hidden;
+	transition: height .2s;
+}

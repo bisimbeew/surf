@@ -1116,6 +1116,11 @@ footer {
 .shop__price {
   font-size: 36px;
 }
+@media screen and (max-width: 768px) {
+  .shop__price {
+    margin-right: 2rem;
+  }
+}
 
 .shop__btn {
   margin-right: auto;
@@ -1127,9 +1132,84 @@ footer {
   margin-right: 1rem;
 }
 
-.team_container {
+.team-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+}
+
+.team_list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.team__item {
+  max-width: 13rem;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .team__member {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team__photo {
+    display: none;
+  }
+}
+
+.team_name {
+  margin: 1.5rem 0;
+  font-weight: 700;
+  position: relative;
+}
+.team_name::after {
+  content: url(../img/team-after.png);
+  position: absolute;
+  right: 1rem;
+  top: 0.1rem;
+}
+@media screen and (max-width: 768px) {
+  .team_name {
+    display: flex;
+    margin: 5rem auto;
+    font-weight: 700;
+    position: relative;
+  }
+  .team_name::after {
+    content: url(../img/team-after.png);
+    position: absolute;
+    right: -1rem;
+    top: -0.1rem;
+  }
+}
+
+.team__item-avtive {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .team__item-avtive {
+    display: block;
+  }
+}
+
+.team__text-block {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s;
 }

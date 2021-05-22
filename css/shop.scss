@@ -127,6 +127,9 @@
 
 .shop__price{
   font-size: 36px;
+  @include tablets{
+    margin-right: 2rem;
+  }
 }
 
 .shop__btn{
