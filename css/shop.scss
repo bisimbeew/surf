@@ -53,6 +53,21 @@
   @include tablets {
     display: none;
   }
+
+  &:hover {
+    .parameters-btn_menu{
+      display: block;
+    }
+  }
+}
+
+.icon__img{
+  width: 24px;
+  height: 24px;
+}
+
+.menu-item{
+  align-items: center;
 }
 
 .parameters-btn_menu{
