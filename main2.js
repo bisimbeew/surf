@@ -14,3 +14,16 @@ closeBtn.addEventListener('click', e=>{
 	overlay.style.display = 'none';
 	wrapper.style. display = 'block';
 });
+
+const slider = $('.shop__slider').bxSlider({
+   //pager: false,
+   //controls: false
+});
+$(".left-arrow").click((e) => {
+  e.preventDefault();
+  slider.goToPrevSlide();
+});
+$(".right-arrow").click((e) => {
+  e.preventDefault();
+  slider.goToNextSlide();
+});
