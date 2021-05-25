@@ -112,13 +112,15 @@
     </section>
     <section class="section shop">
       <div class="container shop-container">
-        <a href="#" class="slider__arrow arrow__left"> 
-          <img src="./img/leftArrow.png" alt="leftArrow">
-        </a>
+        <div class="arrow left-arrow">
+          <a href="#">
+            <img src="./img/leftArrow.png" alt="leftArrow">
+          </a>
+        </div>
         <ul class="shop__slider">
-          <li class="shop__slider-element">
+          <li class="slider__item">
             <div class="shop__img">
-              <img src="./img/board_one.jpg" alt="board__one">
+              <img src="./img/board_one.jpg" alt="board" class="boards__img-photo" >
             </div>
             <div class="shop__content">
                <div class="parameters_btn">
@@ -174,9 +176,9 @@
                 </div>
             </div>
           </li>
-          <li class="shop__slider-element">
+          <li class="slider__item">
             <div class="shop__img">
-              <img src="./img/board__two.png" alt="board__one">
+              <img src="./img/board__two.jpg" alt="board" class="boards__img-photo">
             </div>
             <div class="shop__content">
               <div class="parameters_btn">
@@ -234,9 +236,11 @@
             </div>
           </li>
         </ul>
-          <a href="#" class="slider__arrow arrow__right">
-          <img src="./img/right-arrow.png" alt="#">
+        <div class="arrow right-arrow">
+          <a href="#">
+            <img src="./img/right-arrow.png" alt="rightArrow">
           </a>
+        </div>
       </div>
     </section>
     <div class="section team">
@@ -445,8 +449,8 @@
 		 <li class="overlay__list-item"><a href="#" class="overlay__link">Контакты</a></li>
 	</ul>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="./main2.js"></script>
 </body>
 </html>

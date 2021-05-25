@@ -960,7 +960,6 @@ footer {
 }
 
 .shop {
-  height: 100%;
   background-color: #f8faf9;
 }
 
@@ -972,17 +971,25 @@ footer {
   min-width: 0rem;
 }
 
-.left-arrow {
-  margin-right: 1rem;
-  margin-left: 1rem;
+.arrow {
+  position: absolute;
+  z-index: 9999;
 }
 
-.shop__Centr-Slider {
+.right-arrow {
+  right: -43px;
+}
+
+.left-arrow {
+  left: -43px;
+}
+
+.slider__item {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  .shop__Centr-Slider {
+  .slider__item {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -992,23 +999,27 @@ footer {
 .shop__img {
   min-width: 419px;
   min-height: 540px;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   .shop__img {
-    min-width: 20rem;
-    min-height: 24rem;
+    max-width: 21rem;
+    max-height: 23rem;
+    min-width: 21rem;
+    min-height: 23rem;
+    padding: 80px 0;
   }
 }
 
 .shop__content {
-  margin-left: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 23.125rem;
+}
+@media screen and (max-width: 768px) {
+  .shop__content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .parameters_btn {
@@ -1116,9 +1127,10 @@ footer {
   margin-left: auto;
 }
 
-.right-arrow {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.bx-wrapper {
+  border: 0 !important;
+  background: transparent;
+  box-shadow: none;
 }
 
 .team-container {

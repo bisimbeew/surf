@@ -16,13 +16,17 @@ closeBtn.addEventListener('click', e=>{
 });
 
 const slider = $('.shop__slider').bxSlider({
-   //pager: false,
-   //controls: false
+   pager: false,
+   controls: false
 });
+
+
 $(".left-arrow").click((e) => {
   e.preventDefault();
   slider.goToPrevSlide();
 });
+
+
 $(".right-arrow").click((e) => {
   e.preventDefault();
   slider.goToNextSlide();
