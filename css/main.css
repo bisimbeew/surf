@@ -1168,6 +1168,7 @@ footer {
 
 .shop__price {
   font-size: 60px;
+  font-weight: 300;
 }
 @media screen and (max-width: 768px) {
   .shop__price {
