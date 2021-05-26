@@ -13,9 +13,19 @@
  }
 
 .title-page-header_line {
+  height: 100vh;
   background: url(../img/header_line.png) center top;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #313131;
+
+  @include tablets{
+    background: url(../img/header_line.png) left -329px top 47px no-repeat; 
+    background-size: cover;
+  }
+  @include phones{
+    background: url(../img/header_line.png) left -501px top 47px no-repeat; 
+  }
 }
 
 

@@ -167,9 +167,22 @@ footer {
 }
 
 .title-page-header_line {
+  height: 100vh;
   background: url(../img/header_line.png) center top;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #313131;
+}
+@media screen and (max-width: 768px) {
+  .title-page-header_line {
+    background: url(../img/header_line.png) left -329px top 47px no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title-page-header_line {
+    background: url(../img/header_line.png) left -501px top 47px no-repeat;
+  }
 }
 
 .header {
