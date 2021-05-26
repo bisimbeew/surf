@@ -40,13 +40,16 @@ body {
 
 .container {
   position: relative;
-  width: 95%;
+  width: 100%;
   max-width: 940px;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 100%;
   }
 }
 
@@ -964,6 +967,7 @@ footer {
 
 .shop {
   background-color: #f8faf9;
+  height: 100%;
 }
 
 .shop-container {
@@ -1078,7 +1082,8 @@ footer {
 }
 
 .menu-item {
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .parameters-btn_menu {
@@ -1093,11 +1098,6 @@ footer {
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
   box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
-}
-
-.menu-item {
-  display: flex;
-  justify-content: space-between;
 }
 
 .shop__title {

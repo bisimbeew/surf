@@ -1,5 +1,6 @@
 .shop {
   background-color: #f8faf9;
+  height: 100%;
 }
 
 .shop-container{
@@ -104,7 +105,8 @@
 
 
 .menu-item{
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .parameters-btn_menu{
@@ -118,11 +120,6 @@
   top: 0;
   backdrop-filter: blur(40px);
   box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
-}
-
-.menu-item{
-  display: flex;
-  justify-content: space-between;
 }
 
 .shop__title{
@@ -189,6 +186,7 @@
 
 .shop__price{
   font-size: 60px;
+  font-weight: 300;
   @include tablets{
     margin-right: 2rem;
   }
