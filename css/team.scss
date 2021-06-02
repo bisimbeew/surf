@@ -1,11 +1,11 @@
-.team-container{
+.team__container{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
 }
 
-.team_list{
+.team__list{
 	display: flex;
 	justify-content: space-between;
 	min-width: 100%;
@@ -24,6 +24,16 @@
 	cursor: pointer;
 }
 
+.team__item-active .team__name {
+	position: relative; }
+	.team__item-active .team__name::after {
+	  content: url(../img/arrow-top.png);
+	  position: absolute; }
+ .team__item-active .team__text-block {
+	height: 100%;
+	overflow: hidden; }
+
+
 .team__member{
 	@include tablets{
 		display: flex;
@@ -37,7 +47,7 @@
 	}
 }
 
-.team_name{
+.team__name{
 	margin: 1.5rem 0;
 	font-weight: 700;
 	position: relative;
@@ -63,15 +73,39 @@
 	}
 }
 
-.team__item-avtive{
-	position: relative;
-	@include tablets{
-		display: block;
-	}
-}
-
 .team__text-block{
 	height: 0;
 	overflow: hidden;
 	transition: height .2s;
 }
+
+.team__position{
+	font-weight: 400;
+	font-size: 16px;
+}
+.team__actions {
+	color: #666;
+	@include tablets{
+		color: #666;
+    margin-top: 0.1rem; }
+	}
+
+ .team__title {
+	@include phones{
+	font-size: 25px;
+	line-height: 30px;
+	text-align: center;
+   margin-bottom: 3rem; } 
+}
+
+@include tablets {
+	.team__item-active .team__name {
+	  display: block;
+	  position: relative; }
+	  .team__item-active .team__name::after {
+		 content: url(../img/arrow-top.png);
+		 position: absolute; }
+		 .team__item-active .team__photo {
+			display: block;
+			text-align: center; }
+		 }

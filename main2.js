@@ -31,3 +31,23 @@ $(".right-arrow").click((e) => {
   e.preventDefault();
   slider.goToNextSlide();
 });
+
+$(document).ready(() =>{
+
+  $('.team__item').on('click', (e)=>{
+      
+      $('.team__item').removeClass('team__item-active');
+
+  });
+
+  $('.team__item').on('click', function(e){
+      
+      $(this).addClass('team__item-active');
+
+  });
+  $('.shop__slider').bxSlider({
+      pager: false,
+      responsive: true,
+  });
+
+});
