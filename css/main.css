@@ -670,7 +670,7 @@ footer {
   }
 }
 
-.review__title {
+.review_title {
   font-weight: bold;
   font-size: 27px;
   margin-bottom: 1.0625rem;
@@ -678,7 +678,7 @@ footer {
   color: #292929;
 }
 
-.review__text {
+.review_text {
   font-weight: 400;
   color: #666;
   font-size: 16px;
@@ -686,7 +686,7 @@ footer {
   margin-bottom: 3.1875rem;
 }
 
-.review__hero-name {
+.review_hero-name {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5rem;
