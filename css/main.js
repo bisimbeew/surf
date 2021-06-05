@@ -1,4 +1,4 @@
-const slide = (fuction () {
+const slider = (fuction () {
    const left = document.querySelector('.slider__btn--prev');
    const right = document.querySelector('.slider__btn--next');
    const slider = document.querySelector('.slider__list');
