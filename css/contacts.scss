@@ -13,12 +13,12 @@
   flex-shrink: 0;
 }
 }
-.header-contacts_phone{
+.header-contacts__phone{
   @include tablets{
     display: none;
   }
 }
-.footer-contacts_phone{
+.footer-contacts__phone{
   &:before{
     content: url("../img/phones.png");
     margin-left: -1.25rem;
@@ -27,7 +27,7 @@
   }
 }
 
-.contacts_place{
+.contacts__place{
   font-size: 21px;
   font-weight: 400;
 }

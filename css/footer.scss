@@ -1,4 +1,12 @@
-.footer_container{
+.footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 10;
+}
+
+.footer__container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,7 +29,7 @@
   flex-direction: column;
 }
 
-.footer_contacts{
+.footer__contacts{
   display: flex;
   flex-direction: column;
   white-space: nowrap;
@@ -31,7 +39,7 @@
   }
 }
 
-.footer_phone {
+.footer__phone {
   
   margin-left: 1.375rem;
 }
