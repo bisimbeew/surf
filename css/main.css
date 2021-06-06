@@ -1437,6 +1437,12 @@ footer {
     width: 5.5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .accordion__item-title {
+    min-width: 2.5rem;
+    width: 4.5rem;
+  }
+}
 
 .accordion__item-name {
   writing-mode: vertical-lr;
