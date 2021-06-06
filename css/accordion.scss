@@ -62,6 +62,10 @@
 	@include phones{
 	  width: 5.5rem;
 	}
+	@include phones{
+		min-width: 2.5rem;
+		width: 4.5rem;
+	}
  }
  
  .accordion__item-name {
