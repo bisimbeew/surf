@@ -1276,12 +1276,6 @@ footer {
   padding-bottom: 5px;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .team__content-block {
-    height: 100%;
-    overflow: hidden;
-  }
-}
 
 .team__item-active .team__title {
   position: relative;

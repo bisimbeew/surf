@@ -59,10 +59,7 @@
  .team__content-block{
 	padding-bottom: 5px;
 	text-align: center;
-	@include tablets{
-		height: 100%;
-		overflow: hidden;
-	}
+
  }
  
  .team__item-active .team__title {
@@ -78,10 +75,7 @@
 	.team__item-active .team__content-block{
 	  text-align: center;
 	}
- 
- 
- 
- 
+
 	.team-version-desktop{
 	  @include tablets{
 		 display: none;
