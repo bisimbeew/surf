@@ -53,12 +53,16 @@
 	  height: 0;
 	  overflow: hidden;
 	  transition: height .2s;
-	
+
  }
  
  .team__content-block{
 	padding-bottom: 5px;
 	text-align: center;
+	@include tablets{
+		height: 100%;
+		overflow: hidden;
+	}
  }
  
  .team__item-active .team__title {
@@ -97,7 +101,7 @@
  
 	.team__item-active .team__content {
 	  @include tablets{
-		 min-height: 289px;
+		 min-height: 327px;
 		 transition: height 1s;
 	}
  }
@@ -113,3 +117,10 @@
 		color: #666;
     margin-top: 0.1rem; }
 	}
+
+.team__member{
+	@include tablets{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}

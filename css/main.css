@@ -1276,6 +1276,12 @@ footer {
   padding-bottom: 5px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .team__content-block {
+    height: 100%;
+    overflow: hidden;
+  }
+}
 
 .team__item-active .team__title {
   position: relative;
@@ -1316,7 +1322,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .team__item-active .team__content {
-    min-height: 289px;
+    min-height: 327px;
     transition: height 1s;
   }
 }
@@ -1335,6 +1341,13 @@ footer {
   .team__actions {
     color: #666;
     margin-top: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team__member {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
