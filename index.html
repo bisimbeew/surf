@@ -15,7 +15,7 @@
 <body>
 <div class="wrapper" id="wrapper">
     <div class="maincontent">
-    <section id="title-page-header-line" class="title-page-header_line">
+    <section data-section-id="title-page-header-line" class="title-page-header_line">
         <div class="container header_line_container">
             <header class="header">
                 <a href="./index.html" class="logo">
@@ -39,7 +39,7 @@
             <div class="hero__text">
                 <h1 class="hello_title">Профессиональные доски для серфинга</h1>
                 <h3 class="hello__desc">Самый большой выбор серфбордов в мире</h3>
-                <a href="#" class="button">Заказать</a>
+                <a href="#order" class="button">Заказать</a>
             </div>
             <div class="info_list">
                 <ul class="info-content">
@@ -187,7 +187,7 @@
                             </div>
                             <div class="shop__price-item">
                                 <div class="shop__price">7000 ₽</div>
-                                <a href="#" class="button shop__btn">Заказать</a>
+                                <a href="#order" class="button shop__btn">Заказать</a>
                             </div>
                         </div>
                     </li>
@@ -249,7 +249,7 @@
                             </div>
                             <div class="shop__price-item">
                                 <div class="shop__price">12000 ₽</div>
-                                <a href="#" class="button shop__btn">Заказать</a>
+                                <a href="#order" class="button shop__btn">Заказать</a>
                             </div>
                         </div>
                     </li>
@@ -572,14 +572,14 @@
         </section>
     
     <!-- секция формы-->
-    <section  data-section-id="order" class="section order" id="order">
+    <section  data-section-id="order" class="section order" >
         <div id="modal" class="modal">
             <div class="modal__container">
               <div class="modal__content">
                 Сообщение отправлено
               </div>
               <div class="modal__button-container">
-                <a href="#" class="btn btn-modal">Закрыть</a>
+                <a href="#" class="button btn-modal">Закрыть</a>
               </div>
             </div>
           </div>
@@ -587,39 +587,40 @@
                 <div class="basket_container">
                     <h2 class="title basket_title">Закажите доску</h2>
                     <form class="form">
+                        <input type="hidden" name="to" value="bisimbeew@icloud.com">
                         <div class="form_col">
                             <div class="form_row">
                                 <label class="form_item">
                                     <div class="form_name">Имя</div>
-                                    <input type="text" class="form_input">
+                                    <input type="text" class="form_input" name="name">
                                 </label>
-                                <label class="form_item">
+                                <label class="form__item">
                                     <div class="form_name">Телефон</div>
-                                    <input type="text" class="form_input">
+                                    <input type="text" class="form_input" name="phone">
                                 </label>
                             </div>
                             <div class="form_row">
                                 <label class="form_item">
                                     <div class="form_name">Улица</div>
-                                    <input type="text" class="form_input">
+                                    <input type="text" class="form_input" name="street">
                                 </label>
                             </div>
                             <div class="form_row">
                                 <label class="form_item">
                                     <div class="form_name">Дом</div>
-                                    <input type="text" class="form_input">
+                                    <input type="text" class="form_input" name="home">
                                 </label>
                                 <label class="form_item">
                                     <div class="form_name">Корпус</div>
-                                    <input type="text" class="form_input">
+                                    <input type="text" class="form_input"  name="building">
                                 </label>
                                 <label class="form_item">
                                     <div class="form_name">Квартира</div>
-                                    <input type="text" class="form_input">
+                                    <input type="text" class="form_input" name="apartments">
                                 </label>
                                 <label class="form_item">
                                     <div class="form_name">Этаж</div>
-                                    <input type="text" class="form_input">
+                                    <input type="text" class="form_input" name="floor">
                                 </label>
                             </div>
                         </div>
@@ -627,7 +628,7 @@
                             <div class="form_row">
                                 <label class="form_item">
                                     <div class="form_name">Комментарии</div>
-                                    <textarea class="form_input form_textarea"></textarea>
+                                    <textarea class="form_input form_textarea" name="comment"></textarea>></textarea>
                                 </label>
                             </div>
                             <div class="controls">
@@ -660,7 +661,7 @@
         </section>
     
     <!-- секция с Я.Картами и футером-->
-    <section class="section map" id="map" data-section-id="contacts">
+    <section id="map"  data-section-id="contacts" class="section map">
             <footer class="footer">
                 <div class="container footer__container">
                     <div class="contacts footer__contacts">
