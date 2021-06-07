@@ -6,7 +6,7 @@ const countSectionPosition = sectionEq =>{
     return sectionEq *-100;
 }
 
-sections.first().addClass("active");
+sections.first().addClass("section-active");
 
 const performTransition = sectionEq =>{
     if (inScroll === false){
@@ -21,7 +21,7 @@ const performTransition = sectionEq =>{
 
     sideMenu.find(".page__point").eq(sectionEq).addClass("page__point-active").siblings().removeClass("page__point-active");
 
-    sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+    sections.eq(sectionEq).addClass("section-active").siblings().removeClass("section-active");
 
         setTimeout(() =>{
             inScroll = false;
@@ -31,7 +31,7 @@ const performTransition = sectionEq =>{
     
 
 const scrollViewport = direction =>{
-    const activeSection = sections.filter(".active");
+    const activeSection = sections.filter(".section-active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
