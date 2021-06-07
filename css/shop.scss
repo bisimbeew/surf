@@ -137,8 +137,8 @@
   @include phones {
     margin-top: 2.4rem;
     text-align: center;
-    margin-left: 76px;
-    font-size: 30px;
+    margin-left: 44px;
+    font-size: 28px;
   }
 }
 
@@ -188,6 +188,11 @@
   font-weight: 300;
   @include tablets{
     margin-right: 2rem;
+  }
+
+  @include phones{
+    font-size: 32px;
+    font-weight: 400;
   }
 }
 

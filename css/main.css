@@ -22,11 +22,8 @@ body {
   font-size: 16px;
   font-family: "Alegreya Sans", sans-serif;
   color: #FFF;
-  line-height: 1.42;
   background: #313131;
-  -webkit-font-smoothing: antialiased;
   position: relative;
-  -moz-animation-smoothing: grayscale;
   color: #292929;
 }
 
@@ -38,11 +35,12 @@ body {
 }
 
 .maincontent {
-	position: relative;
-	height: 100%;
-	transform: translateY(0%);
-	transition: transform 1s;
-	will-change: transform; }
+  position: relative;
+  height: 100%;
+  transform: translateY(0%);
+  transition: transform 1s;
+  will-change: transform;
+}
 
 .container {
   position: relative;
@@ -128,16 +126,6 @@ footer {
 }
 .section--font-color--white {
   color: #FFF;
-}
-@media screen and (max-width: 768px) {
-  .section {
-    min-height: 108vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section {
-    min-height: 120vh;
-  }
 }
 
 .title {
@@ -1168,8 +1156,8 @@ footer {
   .shop__title {
     margin-top: 2.4rem;
     text-align: center;
-    margin-left: 76px;
-    font-size: 30px;
+    margin-left: 44px;
+    font-size: 28px;
   }
 }
 
@@ -1223,6 +1211,12 @@ footer {
 @media screen and (max-width: 768px) {
   .shop__price {
     margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .shop__price {
+    font-size: 32px;
+    font-weight: 400;
   }
 }
 
