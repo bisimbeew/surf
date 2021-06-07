@@ -41,7 +41,7 @@ const scrollViewport = direction =>{
     if (direction === "prev" && prevSection.length){
         performTransition(prevSection.index())
     }
-}
+} 
 
 $(window).on("wheel", e=>{
     const deltaY = e.originalEvent.deltaY;
