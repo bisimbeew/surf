@@ -14,7 +14,8 @@
 </head>
 <body>
 <div class="wrapper" id="wrapper">
-    <section class="title-page-header_line">
+    <div class="maincontent">
+    <section id="title-page-header-line" class="title-page-header_line">
         <div class="container header_line_container">
             <header class="header">
                 <a href="./index.html" class="logo">
@@ -35,7 +36,7 @@
                     <img src="img/gamburger.png" alt="gamburger" class="burger__icon">
                 </a>
             </header>
-            <div class="order">
+            <div class="hero__text">
                 <h1 class="hello_title">Профессиональные доски для серфинга</h1>
                 <h3 class="hello__desc">Самый большой выбор серфбордов в мире</h3>
                 <a href="#" class="button">Заказать</a>
@@ -58,8 +59,9 @@
             </div>
         </div>
     </section>
-    <main class="maincontent">
-        <section class="section ">
+
+    <!-- Секция "почему"-->
+    <section data-section-id="reason" class="section reason">
             <div class="container">
                 <div class="whyline ">
                     <h2 class="why_title headline_title">Почему Surfboard?</h2>
@@ -119,7 +121,9 @@
                 </ul>
             </div>
         </section>
-        <section class="section shop">
+
+    <!-- Секция со слайдером -->
+    <section data-section-id="shop" class="section shop">
             <div class="container shop-container">
                 <div class="arrow left-arrow">
                     <a href="#">
@@ -257,13 +261,15 @@
                 </div>
             </div>
         </section>
-        <section class="section section--team">
+
+    <!-- секция команды с вертикальным слайдером-->    
+    <section data-section-id="section--team" class="section section--team">
             <div class="container container__team">
               <h2 class="title section__title">Команда</h2>
               <ul class="team__list team-version-desktop">
                 <li class="team__item">
                   <div class="team__member">
-                    <img src="./img/boris.png" alt="" class="team__photo">
+                    <img src="./img/boris.png" alt="team member" class="team__photo">
                   </div>
                   <div class="team__title">
                     <p>Борис Федорович</p>
@@ -281,7 +287,7 @@
                 </li>
                 <li class="team__item">
                   <div class="team__member">
-                    <img src="./img/Olga.png" alt="" class="team__photo">
+                    <img src="./img/Olga.png" alt="team member" class="team__photo">
                   </div>
                   <div class="team__title">
                     <p>Ольга Невзорова</p>
@@ -299,7 +305,7 @@
                 </li>
                 <li class="team__item">
                   <div class="team__member">
-                    <img src="./img/ingvar.png" alt="" class="team__photo">
+                    <img src="./img/ingvar.png" alt="team member" class="team__photo">
                   </div>
                   <div class="team__title">
                     <p>Ингвар Нильсон</p>
@@ -317,7 +323,7 @@
                 </li>
                 <li class="team__item">
                   <div class="team__member">
-                    <img src="./img/Katya.png" alt="" class="team__photo">
+                    <img src="./img/Katya.png" alt="team member" class="team__photo">
                   </div>
                   <div class="team__title">
                     <p>Екатерина Иванова</p>
@@ -341,7 +347,7 @@
                   </div>
                 <div class="team__content">
                     <div class="team__member">
-                      <img src="./img/boris.png" alt="" class="team__photo">
+                      <img src="./img/boris.png" alt="team member" class="team__photo">
                     </div>
                     <div class="team__content-block">
                         <div class="team__position">
@@ -359,7 +365,7 @@
                   </div>
                   <div class="team__content">
                     <div class="team__member">
-                      <img src="./img/Olga.png" alt="" class="team__photo">
+                      <img src="./img/Olga.png" alt="team member" class="team__photo">
                     </div>
                     <div class="team__content-block">
                         <div class="team__position">
@@ -376,7 +382,7 @@
                   </div>
                   <div class="team__content">
                     <div class="team__member">
-                      <img src="./img/ingvar.png" alt="" class="team__photo">
+                      <img src="./img/ingvar.png" alt="team member" class="team__photo">
                     </div>
                     <div class="team__content-block">
                         <div class="team__position">
@@ -393,7 +399,7 @@
                   </div>
                   <div class="team__content">
                     <div class="team__member">
-                      <img src="./img/Katya.png" alt="" class="team__photo">
+                      <img src="./img/Katya.png" alt="team member" class="team__photo">
                     </div>
                     <div class="team__content-block">
                         <div class="team__position">
@@ -409,7 +415,9 @@
       
             </div>
           </section>
-          <section class="section section--accordion">
+
+    <!-- cекция с горизонтальным аккордионом-->
+    <section data-section-id="slider" class="section section--accordion">
             <h2 class="titlesection__title accordion__titile">Меню</h2>
             <ul class="accordion__list">
               <li class="accordion__item board1">
@@ -468,7 +476,9 @@
               </li>
             </ul>
           </section>
-        <section class="section">
+    
+    <!-- секция отзывы -->
+    <section data-section-id="reviews" class="section reviews">
             <div class="container reviews_container">
                     <h2 class="title reviews_title">Отзывы</h2>
                   <ul class="reviews_slider">
@@ -536,7 +546,43 @@
             </div>
         </section>
 
-        <section class="section basket">
+    <!--секция ютуб-->
+    <section data-section-id="player" class="section player__section">
+            <div class="container player__container">
+                <h2 class="title player__title">
+                    как мы работаем
+                </h2>
+                <div class="player active">
+                    <div class="player__wrapper">
+                        <div id="player__content" class="player__content"></div>
+                        <div class="player__controls">
+                            <div class="player__start"></div>
+                            <div class="player__playback">
+                                <div class="player__playback-completed"></div>
+                                <button class="player__playback-button"></button>
+                            </div>
+                            <div class="player__duration">
+                                <span class="player__duration-completed">0:00</span>  :
+                                <span class="player__duration-estimate">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!-- секция формы-->
+    <section  data-section-id="order" class="section order" id="order">
+        <div id="modal" class="modal">
+            <div class="modal__container">
+              <div class="modal__content">
+                Сообщение отправлено
+              </div>
+              <div class="modal__button-container">
+                <a href="#" class="btn btn-modal">Закрыть</a>
+              </div>
+            </div>
+          </div>
             <div class="container">
                 <div class="basket_container">
                     <h2 class="title basket_title">Закажите доску</h2>
@@ -612,7 +658,9 @@
                 </div>
             </div>
         </section>
-        <section class="section map" id="map" data-section-id="contacts">
+    
+    <!-- секция с Я.Картами и футером-->
+    <section class="section map" id="map" data-section-id="contacts">
             <footer class="footer">
                 <div class="container footer__container">
                     <div class="contacts footer__contacts">
@@ -648,44 +696,25 @@
                 </div>
             </footer>
         </section>
-    </main>
+    </div>
 </div>
-<nav class="map-fixed">
-    <ul class="map-fixed_list">
-        <li class="map-fixed_item map-fixed_item-active">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-        <li class="map-fixed_item">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-        <li class="map-fixed_item">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-        <li class="map-fixed_item">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-        <li class="map-fixed_item">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-        <li class="map-fixed_item">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-        <li class="map-fixed_item">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-        <li class="map-fixed_item">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-        <li class="map-fixed_item">
-            <a href="#" class="map-fixed_link"></a>
-        </li>
-    </ul>
-</nav>
+<!--<ul class="page">
+    <li class="page__point page__point-active"><a href="" data-scroll-to="title-page-header_line" class="page__link"></a></li>
+    <li class="page__point"><a href="" class="page__link" data-scroll-to="reason"></a></li>
+    <li class="page__point"><a href="" class="page__link" data-scroll-to="shop"></a></li>
+    <li class="page__point"><a href="" class="page__link" data-scroll-to="section--team"></a></li>
+    <li class="page__point"><a href="" class="page__link" data-scroll-to="slider"></a></li>
+    <li class="page__point"><a href="" class="page__link" data-scroll-to="reviews"></a></li>
+    <li class="page__point"><a href="" class="page__link" data-scroll-to="player"></a></li>
+    <li class="page__point"><a href="" class="page__link" data-scroll-to="order"></a></li>
+    <li class="page__point"><a href="" class="page__link" data-scroll-to="contacts"></a></li>
+</ul>
+-->
 <div class="overlay">
     <a href="#" class="closeBtn">x</a>
     <ul class="overay__list">
         <li class="overlay__list-item"><a href="#" class="overlay__link">О нас</a></li>
-        <li class="overlay__list-item"><a href="#" class="overlay__link">Серфборды</a></li>
+        <li class="overlay__list-item"><a href="#" class="overlay__link" data-scrool-to="reason">Серфборды</a></li>
         <li class="overlay__list-item"><a href="#" class="overlay__link">Команда</a></li>
         <li class="overlay__list-item"><a href="#" class="overlay__link">Меню</a></li>
         <li class="overlay__list-item"><a href="#" class="overlay__link">Отзывы</a></li>
@@ -694,12 +723,16 @@
     </ul>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-<script src="jquery.fancybox.min.js"></script>
+<script src="/jquery.fancybox.min.js"></script>
 <script src="./accordion.js"></script>
+<script src="./modal.js"></script>
 <script src="./reviews.js"></script>
 <script src="./main2.js"></script>
+<!--<script src="./page.js"></script>-->
 <script src="./map.js"></script>
 <script src="./team.js"></script>
 </body>

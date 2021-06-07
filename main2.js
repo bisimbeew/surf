@@ -3,7 +3,7 @@ const overlay = document.querySelector( ".overlay");
 const wrapper = document.querySelector (".wrapper");
 const closeBtn = document.querySelector (".closeBtn");
 
-
+////// Модальное окно
 burgerBtn.addEventListener('click', e=>{
 	wrapper.style.display = 'none';
 	overlay.style.display = "flex";
@@ -15,6 +15,8 @@ closeBtn.addEventListener('click', e=>{
 	wrapper.style. display = 'block';
 });
 
+
+//////// Слайдер
 const slider = $('.shop__slider').bxSlider({
    pager: false,
    controls: false
@@ -36,13 +38,13 @@ $(document).ready(() =>{
 
   $('.team__item').on('click', (e)=>{
       
-      $('.team__item').removeClass('team__item-active');
+      $('.team__item').removeClass('item-active');
 
   });
 
   $('.team__item').on('click', function(e){
       
-      $(this).addClass('team__item-active');
+      $(this).addClass('item-active');
 
   });
   $('.shop__slider').bxSlider({
