@@ -3,8 +3,12 @@
 	flex-direction: column;
 	position: fixed;
 	top: 45%;
-	right: 2.5rem; }
- 
+	right: 2.5rem; 
+
+	@include tablets {
+		display: none;
+	}
+}
  .page__point {
 	width: 1rem;
 	height: 1rem;
