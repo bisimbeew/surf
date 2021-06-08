@@ -24,6 +24,8 @@ body {
   background: #313131;
   position: relative;
   color:#292929;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -46,14 +48,14 @@ body {
 
 .container {
   position: relative;
-  width: 100%;
+  width: 95%;
   max-width: 940px;
   margin: 0 auto;
 
   @include tablets{
     width: 100%;
     margin-left: auto;
-    margin-right: 100%;
+    margin-right: auto;
   }
 }
 

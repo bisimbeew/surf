@@ -1,14 +1,15 @@
 const sections = $("section");
 const display = $(".maincontent");
+
 let inScroll = false;
 
 const countSectionPosition = sectionEq =>{
-    return sectionEq *-100;
+    return sectionEq * -100;
 }
 
 sections.first().addClass("active");
 
-const performTransition = sectionEq =>{
+const performTransition = (sectionEq) => {
     if (inScroll === false){
         inScroll = true;
         const position = countSectionPosition(sectionEq);
@@ -19,7 +20,7 @@ const performTransition = sectionEq =>{
 
     });
 
-    sideMenu.find(".page__point").eq(sectionEq).addClass("page__point-active").siblings().removeClass("page__point-active");
+    sideMenu.find(".map-fixed_item").eq(sectionEq).addClass("map-fixed_item-active").siblings().removeClass("map-fixed_item-active");
 
     sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
 
@@ -30,27 +31,29 @@ const performTransition = sectionEq =>{
     };
     
 
-const scrollViewport = direction =>{
+const scrollViewport = direction => {
     const activeSection = sections.filter(".active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
     if (direction === "next" && nextSection.length){
-        performTransition(nextSection.index())
+        performTransition(nextSection.index());
     }
     if (direction === "prev" && prevSection.length){
-        performTransition(prevSection.index())
+        performTransition(prevSection.index());
     }
-} 
+};
 
 $(window).on("wheel", e=>{
     const deltaY = e.originalEvent.deltaY;
     
-    if(deltaY >0){
+    if(deltaY > 0) {
+        //next
         scrollViewport("next");
     }
 
-    if(deltaY <0){
+    if(deltaY < 0) {
+        //prev
         scrollViewport("prev");
     }
     console.log(deltaY);

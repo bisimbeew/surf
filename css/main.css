@@ -25,6 +25,8 @@ body {
   background: #313131;
   position: relative;
   color: #292929;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -44,7 +46,7 @@ body {
 
 .container {
   position: relative;
-  width: 100%;
+  width: 95%;
   max-width: 940px;
   margin: 0 auto;
 }
@@ -52,7 +54,7 @@ body {
   .container {
     width: 100%;
     margin-left: auto;
-    margin-right: 100%;
+    margin-right: auto;
   }
 }
 
@@ -159,7 +161,7 @@ footer {
   color: #fff;
 }
 
-.title-page-header_line {
+.hero {
   height: 100vh;
   background: url(../img/header_line.png) center top;
   background-size: cover;
@@ -167,13 +169,13 @@ footer {
   background-color: #313131;
 }
 @media screen and (max-width: 768px) {
-  .title-page-header_line {
+  .hero {
     background: url(../img/header_line.png) left -329px top 47px no-repeat;
     background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
-  .title-page-header_line {
+  .hero {
     background: url(../img/header_line.png) left -501px top 47px no-repeat;
   }
 }
@@ -368,50 +370,48 @@ footer {
   }
 }
 
-.page {
+.map-fixed {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 45%;
-  right: 2.5rem;
+  top: 35%;
+  right: 8%;
 }
 @media screen and (max-width: 768px) {
-  .page {
+  .map-fixed {
     display: none;
   }
 }
 
-.page__point {
-  width: 1rem;
-  height: 1rem;
+.map-fixed_item {
+  margin-bottom: 0.125rem;
+}
+.map-fixed_item-active .map-fixed_link {
+  border-color: #ffffff;
+}
+
+.map-fixed_link {
+  width: 1.125rem;
+  height: 1.1875rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
+  display: block;
   position: relative;
-  margin-bottom: 1px;
-  transition: all 0.3s;
 }
-
-.page__point:hover {
-  border: 1px solid gray;
-}
-
-.page__point-active {
-  border-color: #fff;
-}
-
-.page__point-active .page__link {
-  background-color: #fff;
-}
-
-.page__link {
-  width: 0.4rem;
-  height: 0.4rem;
+.map-fixed_link:before {
+  content: "";
+  display: block;
+  width: 0.375rem;
+  height: 0.375rem;
   border-radius: 50%;
-  background-color: gray;
+  background: #fff;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
+}
+.map-fixed_link:hover {
+  border: 1px solid #999;
 }
 
 .why {
