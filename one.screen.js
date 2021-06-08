@@ -1,15 +1,14 @@
 const sections = $("section");
 const display = $(".maincontent");
-
 let inScroll = false;
+
+const countSectionPosition = sectionEq =>{
+    return sectionEq *-100;
+}
 
 sections.first().addClass("active");
 
-const countSectionPosition = sectionEq => {
-    return sectionEq * -100;
-};
-
-const performTransition = (sectionEq) => {
+const performTransition = sectionEq =>{
     if (inScroll === false){
         inScroll = true;
         const position = countSectionPosition(sectionEq);
@@ -17,67 +16,63 @@ const performTransition = (sectionEq) => {
 
     display.css({
         transform: `translateY(${position}%)`
+
     });
 
+    sideMenu.find(".map-fixed_item").eq(sectionEq).addClass("map-fixed_item-active").siblings().removeClass("page__point-active");
 
     sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
 
         setTimeout(() =>{
             inScroll = false;
-
-    sideMenu
-    .find(".map-fixed_item")
-    .eq(sectionEq)
-    .addClass("map-fixed_item-active")
-    .siblings()
-    .removeClass("map-fixed_item-active");
-
-        }, 1300);
-        }
+        }, 1010);
+        };
     };
     
-//здесь ок
-const scrollViewport = direction => {
+
+const scrollViewport = direction =>{
     const activeSection = sections.filter(".active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
     if (direction === "next" && nextSection.length){
-        performTransition(nextSection.index());
+        performTransition(nextSection.index())
     }
     if (direction === "prev" && prevSection.length){
-        performTransition(prevSection.index());
+        performTransition(prevSection.index())
     }
-};
-//здесь ок
-$(window).on("wheel", (e) =>{
+}
+
+$(window).on("wheel", e=>{
     const deltaY = e.originalEvent.deltaY;
     
-    if (deltaY > 0) {
-        //next
+    if(deltaY >0){
         scrollViewport("next");
     }
 
-    if(deltaY < 0) {
-        //prev
+    if(deltaY <0){
         scrollViewport("prev");
     }
-});//
-
-$(window).on("keydown", (e) => {
-      switch (e.keyCode) {
-            case 38:
-              scrollViewport("prev");
-              break;
-            case 40:
-              scrollViewport("next");
-              break;
-      }
+    console.log(deltaY);
 });
+
+$(window).on("keydown", e=>{
+
+switch (e.keyCode) {
+    case 38:
+        scrollViewport("prev");
+    break;
+    case 40:
+        scrollViewport("next");
+        break;
+}
+
+})
+$(".wrapper").on("touchmove", e=> e.preventDefault());
 
 $("[data-scroll-to]").click(e=>{
     e.preventDefault();
-    
+
     const $this = $(e.currentTarget);
     const target = $this.attr("data-scroll-to");
     const reqSeqtion = $(`[data-section-id=${target}]`);
@@ -86,12 +81,8 @@ $("[data-scroll-to]").click(e=>{
 
 });
 
-
-$(".wrapper").on("touchmove", e=> e.preventDefault());
-
-
-$("body").on( {
-      on:function(event, direction) {
+$("body").swipe( {
+      swipe:function(event, direction) {
         const scroller = scrollViewport();
         let scrollDirection ="";
         
@@ -102,4 +93,3 @@ $("body").on( {
 
       },
     });
-    
