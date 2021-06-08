@@ -58,17 +58,20 @@ $(window).on("wheel", (e) =>{
     }
 });
 
-$(window).on("keydown", e=> {
+$(window).on("keydown", (e) => {
+    
+    const tagName = e.target.tagName.toLowerCase();
 
-    switch (e.keyCode) {
-      case 38:
-        scrollViewport("prev");
-        break;
-      case 40:
-        scrollViewport("next");
-        break;
-}
-
+    if (TagName != "input" && tagName != "textarea") {
+      switch (e.keyCode) {
+            case 38:
+              scrollViewport("prev");
+              break;
+            case 40:
+              scrollViewport("next");
+              break;
+      }
+    }
 })
 $(".wrapper").on("touchmove", e=> e.preventDefault());
 
