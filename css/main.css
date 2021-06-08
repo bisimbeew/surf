@@ -386,7 +386,7 @@ footer {
 .map-fixed_item {
   margin-bottom: 0.125rem;
 }
-.map-fixed_item-active .map-fixed_link {
+.map-fixed_item-active .map-fixed_item {
   border-color: #ffffff;
 }
 
@@ -1532,7 +1532,7 @@ footer {
 }
 
 .paused .player__start {
-  background-image: url("../img/pausedicon.png");
+  background-image: url("../img/pause2.png");
 }
 
 .player__duration {
