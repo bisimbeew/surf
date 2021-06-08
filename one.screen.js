@@ -13,11 +13,10 @@ const performTransition = (sectionEq) => {
     if (inScroll === false){
         inScroll = true;
         const position = countSectionPosition(sectionEq);
-        const sideMenu = $(".page");
+        const sideMenu = $(".map-fixed_list");
 
     display.css({
         transform: `translateY(${position}%)`
-
     });
 
     sideMenu.find(".map-fixed_item").eq(sectionEq).addClass("map-fixed_item-active").siblings().removeClass("map-fixed_item-active");
@@ -30,7 +29,7 @@ const performTransition = (sectionEq) => {
         };
     };
     
-
+//здесь ок
 const scrollViewport = direction => {
     const activeSection = sections.filter(".active");
     const nextSection = activeSection.next();
@@ -43,7 +42,7 @@ const scrollViewport = direction => {
         performTransition(prevSection.index());
     }
 };
-
+//здесь ок
 $(window).on("wheel", (e) =>{
     const deltaY = e.originalEvent.deltaY;
     
@@ -56,7 +55,7 @@ $(window).on("wheel", (e) =>{
         //prev
         scrollViewport("prev");
     }
-});
+});//
 
 $(window).on("keydown", (e) => {
     
@@ -72,7 +71,8 @@ $(window).on("keydown", (e) => {
               break;
       }
     }
-})
+});
+
 $(".wrapper").on("touchmove", e=> e.preventDefault());
 
 $("[data-scroll-to]").click(e=>{
