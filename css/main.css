@@ -1511,3 +1511,90 @@ footer {
 .form__error {
   border: 1px solid red;
 }
+
+.player__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 660px;
+  margin: auto;
+  width: 90%;
+}
+
+.player__start {
+  width: 11px;
+  height: 16px;
+  background-image: url("../img/playerStart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.paused .player__start {
+  background-image: url("../img/pausedicon.png");
+}
+
+.player__duration {
+  color: #FFF;
+}
+
+.player__controls {
+  position: absolute;
+  height: 2.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  background-color: #3e3e3e;
+}
+
+.player__playback {
+  height: 16px;
+  width: 70%;
+  position: relative;
+}
+
+.player__playback::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+}
+
+.player__playback-completed {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 10%;
+  background-color: #FEDB3F;
+}
+
+.player__playback-button {
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 50%;
+  background-color: #FEDB3F;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+
+@media (max-width: 768px) {
+  .player__content {
+    width: 100%;
+  }
+
+  .player__title {
+    font-size: 26px;
+  }
+}
