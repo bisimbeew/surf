@@ -411,7 +411,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 .map-fixed_link:hover {
-  border: 1px solid #999;
+  border: 1px solid #fff;
 }
 
 .why {

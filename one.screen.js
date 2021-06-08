@@ -3,11 +3,11 @@ const display = $(".maincontent");
 
 let inScroll = false;
 
-const countSectionPosition = sectionEq =>{
-    return sectionEq * -100;
-}
-
 sections.first().addClass("active");
+
+const countSectionPosition = sectionEq => {
+    return sectionEq * -100;
+};
 
 const performTransition = (sectionEq) => {
     if (inScroll === false){
@@ -19,14 +19,21 @@ const performTransition = (sectionEq) => {
         transform: `translateY(${position}%)`
     });
 
-    sideMenu.find(".map-fixed_item").eq(sectionEq).addClass("map-fixed_item-active").siblings().removeClass("map-fixed_item-active");
 
     sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
 
         setTimeout(() =>{
             inScroll = false;
-        }, 1010);
-        };
+
+    sideMenu
+    .find(".map-fixed_item")
+    .eq(sectionEq)
+    .addClass("map-fixed_item-active")
+    .siblings()
+    .removeClass("map-fixed_item-active");
+
+        }, 1300);
+        }
     };
     
 //здесь ок
@@ -58,10 +65,6 @@ $(window).on("wheel", (e) =>{
 });//
 
 $(window).on("keydown", (e) => {
-    
-    const tagName = e.target.tagName.toLowerCase();
-
-    if (TagName != "input" && tagName != "textarea") {
       switch (e.keyCode) {
             case 38:
               scrollViewport("prev");
@@ -70,14 +73,11 @@ $(window).on("keydown", (e) => {
               scrollViewport("next");
               break;
       }
-    }
 });
-
-$(".wrapper").on("touchmove", e=> e.preventDefault());
 
 $("[data-scroll-to]").click(e=>{
     e.preventDefault();
-
+    
     const $this = $(e.currentTarget);
     const target = $this.attr("data-scroll-to");
     const reqSeqtion = $(`[data-section-id=${target}]`);
@@ -85,6 +85,10 @@ $("[data-scroll-to]").click(e=>{
    performTransition(reqSeqtion.index());
 
 });
+
+
+$(".wrapper").on("touchmove", e=> e.preventDefault());
+
 
 $("body").on( {
       on:function(event, direction) {
@@ -98,3 +102,4 @@ $("body").on( {
 
       },
     });
+    
