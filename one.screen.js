@@ -44,10 +44,10 @@ const scrollViewport = direction => {
     }
 };
 
-$(window).on("wheel", e=>{
+$(window).on("wheel", (e) =>{
     const deltaY = e.originalEvent.deltaY;
     
-    if(deltaY > 0) {
+    if (deltaY > 0) {
         //next
         scrollViewport("next");
     }
@@ -56,16 +56,15 @@ $(window).on("wheel", e=>{
         //prev
         scrollViewport("prev");
     }
-    console.log(deltaY);
 });
 
-$(window).on("keydown", e=>{
+$(window).on("keydown", e=> {
 
-switch (e.keyCode) {
-    case 38:
+    switch (e.keyCode) {
+      case 38:
         scrollViewport("prev");
-    break;
-    case 40:
+        break;
+      case 40:
         scrollViewport("next");
         break;
 }
